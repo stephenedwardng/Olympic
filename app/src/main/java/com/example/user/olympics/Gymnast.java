@@ -8,8 +8,10 @@ public class Gymnast extends Athlete {
 
     private int eventDifficulty;
     private int eventExecution;
+    private Log log;
 
-    public Gymnast(int eventDifficulty, int eventExecution) {
+    public Gymnast(Log log, int eventDifficulty, int eventExecution) {
+        super(log);
         this.eventDifficulty = eventDifficulty;
         this.eventExecution = eventExecution;
     }

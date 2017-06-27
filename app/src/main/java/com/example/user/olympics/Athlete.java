@@ -8,8 +8,8 @@ public abstract class Athlete {
 
     Log log;
 
-    public Athlete(){
-        this.log = new Log();
+    public Athlete(Log log){
+        this.log = log;
     }
 
     public String enterEvent() {

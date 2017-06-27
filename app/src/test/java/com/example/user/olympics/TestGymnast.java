@@ -2,6 +2,9 @@ package com.example.user.olympics;
 
 import org.junit.Test;
 import org.junit.Before;
+
+import java.io.File;
+
 import static org.junit.Assert.*;
 
 
@@ -11,11 +14,15 @@ import static org.junit.Assert.*;
 
 public class TestGymnast {
 
+    FileLogger fileLogger;
     Gymnast gymnast;
+    Log log;
 
     @Before
     public void before() {
-        gymnast = new Gymnast(3, 10);
+        fileLogger = new FileLogger();
+        log = new Log(fileLogger);
+        gymnast = new Gymnast(log, 3, 10);
     }
 
     @Test
