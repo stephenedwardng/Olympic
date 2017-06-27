@@ -3,8 +3,6 @@ package com.example.user.olympics;
 import org.junit.Test;
 import org.junit.Before;
 
-import java.io.File;
-
 import static org.junit.Assert.*;
 
 

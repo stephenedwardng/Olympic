@@ -9,11 +9,6 @@ public class Boxer extends Athlete {
     private int hitsGiven;
     private int hitsTaken;
 
-//    public Boxer(int hitsGiven, int hitsTaken){
-//        this.hitsGiven = hitsGiven;
-//        this.hitsTaken = hitsTaken;
-//    }
-
     public Boxer(Log log, int hitsGiven, int hitsTaken){
         super(log);
         this.hitsGiven = hitsGiven;

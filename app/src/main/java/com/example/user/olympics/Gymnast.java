@@ -8,7 +8,6 @@ public class Gymnast extends Athlete {
 
     private int eventDifficulty;
     private int eventExecution;
-    private Log log;
 
     public Gymnast(Log log, int eventDifficulty, int eventExecution) {
         super(log);
