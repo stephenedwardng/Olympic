@@ -1,9 +1,6 @@
 package com.example.user.olympics;
 
-import android.os.Looper;
-
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import behaviours.Loggable;

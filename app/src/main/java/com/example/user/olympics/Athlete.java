@@ -44,9 +44,7 @@ public abstract class Athlete {
         return String.format("I won %s", medal);
     }
 
-    public int calculate() {
-        return 0;
-    }
+    public abstract int calculate();
 
     public void goRun(int distance){
         log.addRun(distance);

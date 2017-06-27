@@ -16,15 +16,14 @@ public class FileLogger implements Loggable {
     public void saveSession(Integer lastSession) throws IOException {
         File file = new File("file.txt");
         PrintWriter printWriter = new PrintWriter("file.txt");
-        printWriter.println(String.format("%d", lastSession));
-//        printWriter.println("helloawheoawheojwaioejwa");
+        printWriter.println(String.format("Last session: %d", lastSession));
         printWriter.close();
     };
 
     public void saveAllSessions(Integer allSessionsTotal) throws IOException{
         File file = new File("file.txt");
         PrintWriter printWriter = new PrintWriter("file.txt");
-        printWriter.println(String.format("%d", allSessionsTotal));
+        printWriter.println(String.format("Total: %d", allSessionsTotal));
         printWriter.close();
     };
 
